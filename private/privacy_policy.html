@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07080B">
+<title data-en="Privacy Policy — LatheExpert Pro" data-zh="隐私政策 — 车工专家专业版">Privacy Policy — LatheExpert Pro</title>
+<link rel="icon" href="../assets/logo.png">
+<style>
+  :root{
+    /* 与 lib/core/theme.dart AppColors.dark 一致 */
+    --bg:#080C11;--surface:#111823;--text:#EAF1F8;--muted:#8C9BAD;--muted-2:#5A6B7D;
+    --accent:#FF9500;--accent-2:#FFB13D;--blue:#5AC8FF;
+    --stroke:rgba(140,180,220,.12);--panel:#111823;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:
+      radial-gradient(800px 420px at 85% -10%,rgba(255,149,0,.14),transparent 62%),
+      radial-gradient(600px 400px at 5% 0%,rgba(90,200,255,.07),transparent 60%),
+      var(--bg);
+    color:var(--text);line-height:1.75;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .topbar{
+    position:sticky;top:0;z-index:10;
+    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    background:rgba(8,12,17,.82);border-bottom:1px solid var(--stroke);
+  }
+  .topbar-inner{
+    max-width:860px;margin:0 auto;padding:.8rem 1.5rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .back{display:inline-flex;align-items:center;gap:.5rem;color:var(--muted);font-size:.88rem;font-weight:500}
+  .back:hover{color:var(--text);text-decoration:none}
+  .back img{width:26px;height:26px;border-radius:7px}
+  .lang-btn{
+    font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;
+    color:var(--muted);background:transparent;border:1px solid var(--stroke);
+    padding:.42rem .85rem;border-radius:99px;cursor:pointer;transition:.2s;
+  }
+  .lang-btn:hover{color:var(--text);border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.04)}
+  main{max-width:860px;margin:0 auto;padding:3.25rem 1.5rem 4rem}
+  .kicker{
+    display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+    color:#FFB13D;background:rgba(255,149,0,.12);border:1px solid rgba(255,149,0,.24);
+    padding:.3rem .7rem;border-radius:99px;margin-bottom:1rem;
+  }
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);letter-spacing:-.03em;line-height:1.15;margin-bottom:.6rem}
+  .updated{color:var(--muted-2);font-size:.85rem;font-family:var(--mono);margin-bottom:2.25rem}
+  .card{
+    background:var(--panel);border:1px solid var(--stroke);border-radius:16px;
+    padding:1.6rem 1.75rem;margin-bottom:1.75rem;
+  }
+  .card p{color:var(--muted);font-size:.95rem;margin-bottom:.85rem}
+  .card p:last-child{margin-bottom:0}
+  .card b{color:var(--text);font-weight:600}
+  h2{
+    font-size:1.08rem;letter-spacing:-.01em;margin:2.1rem 0 .75rem;
+    display:flex;align-items:center;gap:.6rem;font-weight:650;
+  }
+  h2::before{content:"";width:3px;height:1.05rem;border-radius:2px;background:linear-gradient(180deg,#FFB13D,#F07A00)}
+  p{color:var(--muted);font-size:.95rem;margin-bottom:.85rem}
+  ul{margin:.25rem 0 .9rem 1.1rem;color:var(--muted);font-size:.95rem}
+  li{margin-bottom:.4rem}
+  .mail{
+    display:inline-flex;align-items:center;gap:.5rem;margin-top:.35rem;
+    font-family:var(--mono);font-size:.88rem;color:#FFB13D;
+    background:rgba(255,149,0,.1);border:1px solid rgba(255,149,0,.22);
+    padding:.5rem .9rem;border-radius:10px;
+  }
+  .mail:hover{text-decoration:none;background:rgba(255,149,0,.16)}
+  footer{
+    border-top:1px solid var(--stroke);margin-top:2.5rem;padding-top:1.25rem;
+    display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+    font-size:.8rem;color:var(--muted-2);
+  }
+  footer a{color:var(--muted);font-size:.8rem}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="back" href="../index.html">
+      <img src="../assets/logo.png" alt="">
+      <span data-en="← Back to LatheExpert Pro" data-zh="← 返回车工专家专业版">← Back to LatheExpert Pro</span>
+    </a>
+    <button class="lang-btn" id="lang-toggle" onclick="toggleLanguage()">中文</button>
+  </div>
+</div>
+
+<main>
+  <div class="kicker" data-en="Legal" data-zh="法律文件">Legal</div>
+  <h1 data-en="Privacy Policy" data-zh="隐私政策">Privacy Policy</h1>
+  <div class="updated" data-en="Last updated: October 17, 2026" data-zh="最后更新：2026 年 10 月 17 日">Last updated: October 17, 2026</div>
+
+  <div class="card">
+    <p data-en="<b>LatheExpert Pro</b> (Chinese title: 车工专家专业版, “we”, “our” or “us”) is committed to protecting your privacy. This policy explains what happens to your information when you use our mobile and web application (the “App”)." data-zh="<b>车工专家专业版</b>（LatheExpert Pro，“我们”或“我们的”）致力于保护您的隐私。本政策说明当您使用我们的移动端与网页端应用程序（以下简称“本应用”）时，您的信息将如何被处理。"><b>LatheExpert Pro</b> (“we”, “our” or “us”) is committed to protecting your privacy. This policy explains what happens to your information when you use our mobile and web application (the “App”).</p>
+    <p data-en="On first launch the App shows a summary of this policy once; after you acknowledge it you go straight to the Calculate tab, and nothing else is asked of you." data-zh="首次启动会展示一次隐私说明，点击「知道了」后直接进入「计算」页，之后不会再要求任何授权。">On first launch the App shows a summary of this policy once; after you acknowledge it you go straight to the Calculate tab.</p>
+    <p data-en="The short version: <b>we do not collect, store or share any personal data.</b> The App has no account system, no analytics and no advertising." data-zh="一句话版本：<b>我们不收集、存储或共享任何个人数据。</b>本应用没有账号系统、没有数据埋点、也没有广告。">The short version: <b>we do not collect, store or share any personal data.</b> The App has no account system, no analytics and no advertising.</p>
+  </div>
+
+  <h2 data-en="1. Information Collection and Use" data-zh="1. 信息收集与使用">1. Information Collection and Use</h2>
+  <p data-en="The App is designed to be offline-first. Everything you create stays on your device — calculation inputs, archived history, custom materials, the appearance theme, language, diameter/radius preference and your nickname — stored through standard platform capabilities (UserDefaults / SharedPreferences / localStorage in the web build). Nothing is uploaded to a server." data-zh="本应用以离线优先为设计原则。您创建的所有内容都留在设备上——计算输入、归档的历史记录、自定义材料，以及外观主题、语言、直径 / 半径编程偏好与昵称——通过平台标准能力存储（UserDefaults / SharedPreferences，网页版为 localStorage），不会上传到任何服务器。">The App is designed to be offline-first. All calculation inputs, saved history, custom materials and settings remain on your device, stored through standard platform capabilities (UserDefaults / SharedPreferences / localStorage). Nothing is uploaded to a server.</p>
+  <p data-en="We do not collect your name, email address, phone number, location, contacts, device identifiers, advertising identifiers, usage statistics or crash reports." data-zh="我们不收集您的姓名、电子邮箱、电话号码、位置、通讯录、设备标识符、广告标识符、使用统计或崩溃报告。">We do not collect your name, email address, phone number, location, contacts, device identifiers, advertising identifiers, usage statistics or crash reports.</p>
+
+  <h2 data-en="2. Device Permissions" data-zh="2. 设备权限">2. Device Permissions</h2>
+  <p data-en="The App does not request camera, microphone, photo library, contacts or location access. The “Share” and “Copy” features use the system clipboard and share sheet, and only run when you tap them." data-zh="本应用不申请相机、麦克风、相册、通讯录或定位权限。“分享”与“复制”功能使用系统剪贴板与分享面板，仅在您主动点击时触发。">The App does not request camera, microphone, photo library, contacts or location access. The “Share” and “Copy” features use the system clipboard and share sheet, and only run when you tap them.</p>
+
+  <h2 data-en="3. Third-Party Services" data-zh="3. 第三方服务">3. Third-Party Services</h2>
+  <p data-en="The App does not integrate any third-party analytics, advertising or tracking SDK. Some screens (for example this policy or the built-in manual) may be displayed in an embedded web view; those pages are static documents that do not set tracking cookies or identify you." data-zh="本应用未集成任何第三方统计、广告或追踪 SDK。部分页面（例如本政策或内置手册）可能通过内嵌网页展示，这些页面为静态文档，不设置追踪 Cookie，也不会识别您的身份。">The App does not integrate any third-party analytics, advertising or tracking SDK. Some screens (for example this policy or the built-in manual) may be displayed in an embedded web view; those pages are static documents that do not set tracking cookies or identify you.</p>
+
+  <h2 data-en="4. Data Security" data-zh="4. 数据安全">4. Data Security</h2>
+  <p data-en="Because all data stays on your device, its security depends on the security of that device. We recommend enabling a screen lock and keeping your system up to date. Deleting the App removes the local data it created." data-zh="由于所有数据都保存在您的设备上，其安全性取决于设备本身的安全性。建议开启锁屏密码并及时更新系统。删除本应用会同时移除其创建的本地数据。">Because all data stays on your device, its security depends on the security of that device. We recommend enabling a screen lock and keeping your system up to date. Deleting the App removes the local data it created.</p>
+
+  <h2 data-en="5. Children’s Privacy" data-zh="5. 儿童隐私">5. Children’s Privacy</h2>
+  <p data-en="The App is a professional tool intended for adults working in machining. It is not directed to children under 13, and we do not knowingly collect information from them." data-zh="本应用是面向机加工从业人员的专业工具，不面向 13 岁以下儿童，我们也不会在知情的情况下收集儿童信息。">The App is a professional tool intended for adults working in machining. It is not directed to children under 13, and we do not knowingly collect information from them.</p>
+
+  <h2 data-en="6. Changes to This Policy" data-zh="6. 政策变更">6. Changes to This Policy</h2>
+  <p data-en="We may update this policy from time to time. Any change will be published on this page together with a new “last updated” date. Continued use of the App after a change means you accept the updated policy." data-zh="我们可能不时更新本政策。任何变更都会发布在本页面，并更新“最后更新”日期。变更后继续使用本应用，即表示您接受更新后的政策。">We may update this policy from time to time. Any change will be published on this page together with a new “last updated” date. Continued use of the App after a change means you accept the updated policy.</p>
+
+  <h2 data-en="7. Contact Us" data-zh="7. 联系我们">7. Contact Us</h2>
+  <p data-en="If you have any question or suggestion about this Privacy Policy, please write to us:" data-zh="如果您对本隐私政策有任何疑问或建议，欢迎通过以下方式联系我们：">If you have any question or suggestion about this Privacy Policy, please write to us:</p>
+  <a class="mail" href="mailto:cutflowpro25@gmail.com">cutflowpro25@gmail.com</a>
+
+  <footer>
+    <span data-en="© 2026 LatheExpert. All rights reserved." data-zh="© 2026 LatheExpert. 保留所有权利。">© 2026 LatheExpert. All rights reserved.</span>
+    <a href="terms_of_service.html" data-en="Terms of Service →" data-zh="服务条款 →">Terms of Service →</a>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var KEY = 'lathexpert-lang';
+  var fromUrl = new URLSearchParams(location.search).get('lang');
+  var lang = fromUrl === 'en' || fromUrl === 'zh' ? fromUrl : localStorage.getItem(KEY);
+  if (!lang) {
+    lang = (navigator.language || 'en').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+  }
+  localStorage.setItem(KEY, lang);
+
+  function apply(l) {
+    document.documentElement.lang = l === 'zh' ? 'zh-CN' : 'en';
+    document.querySelectorAll('[data-en]').forEach(function (el) {
+      if (el.tagName === 'TITLE') return;
+      var v = el.getAttribute('data-' + l);
+      if (v !== null) el.innerHTML = v;
+    });
+    var title = document.querySelector('title');
+    if (title) {
+      var t = title.getAttribute('data-' + l);
+      if (t) title.textContent = t;
+    }
+    var btn = document.getElementById('lang-toggle');
+    if (btn) btn.textContent = l === 'zh' ? 'EN' : '中文';
+  }
+
+  window.toggleLanguage = function () {
+    lang = lang === 'zh' ? 'en' : 'zh';
+    localStorage.setItem(KEY, lang);
+    apply(lang);
+  };
+
+  apply(lang);
+})();
+</script>
+</body>
+</html>

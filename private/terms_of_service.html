@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#07080B">
+<title data-en="Terms of Service — LatheExpert Pro" data-zh="服务条款 — 车工专家专业版">Terms of Service — LatheExpert Pro</title>
+<link rel="icon" href="../assets/logo.png">
+<style>
+  :root{
+    /* 与 lib/core/theme.dart AppColors.dark 一致 */
+    --bg:#080C11;--surface:#111823;--text:#EAF1F8;--muted:#8C9BAD;--muted-2:#5A6B7D;
+    --accent:#FF9500;--accent-2:#FFB13D;--blue:#5AC8FF;
+    --stroke:rgba(140,180,220,.12);--panel:#111823;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    background:
+      radial-gradient(800px 420px at 85% -10%,rgba(255,149,0,.14),transparent 62%),
+      radial-gradient(600px 400px at 5% 0%,rgba(90,200,255,.07),transparent 60%),
+      var(--bg);
+    color:var(--text);line-height:1.75;-webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .topbar{
+    position:sticky;top:0;z-index:10;
+    backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+    background:rgba(8,12,17,.82);border-bottom:1px solid var(--stroke);
+  }
+  .topbar-inner{
+    max-width:860px;margin:0 auto;padding:.8rem 1.5rem;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  }
+  .back{display:inline-flex;align-items:center;gap:.5rem;color:var(--muted);font-size:.88rem;font-weight:500}
+  .back:hover{color:var(--text);text-decoration:none}
+  .back img{width:26px;height:26px;border-radius:7px}
+  .lang-btn{
+    font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;
+    color:var(--muted);background:transparent;border:1px solid var(--stroke);
+    padding:.42rem .85rem;border-radius:99px;cursor:pointer;transition:.2s;
+  }
+  .lang-btn:hover{color:var(--text);border-color:rgba(255,255,255,.2);background:rgba(255,255,255,.04)}
+  main{max-width:860px;margin:0 auto;padding:3.25rem 1.5rem 4rem}
+  .kicker{
+    display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+    color:#FFB13D;background:rgba(255,149,0,.12);border:1px solid rgba(255,149,0,.24);
+    padding:.3rem .7rem;border-radius:99px;margin-bottom:1rem;
+  }
+  h1{font-size:clamp(1.9rem,4vw,2.6rem);letter-spacing:-.03em;line-height:1.15;margin-bottom:.6rem}
+  .updated{color:var(--muted-2);font-size:.85rem;font-family:var(--mono);margin-bottom:2.25rem}
+  .card{
+    background:var(--panel);border:1px solid var(--stroke);border-radius:16px;
+    padding:1.6rem 1.75rem;margin-bottom:1.75rem;
+  }
+  .card p{color:var(--muted);font-size:.95rem;margin-bottom:.85rem}
+  .card p:last-child{margin-bottom:0}
+  .card b{color:var(--text);font-weight:600}
+  .warn{border-color:rgba(255,149,0,.28);background:rgba(255,149,0,.07)}
+  h2{
+    font-size:1.08rem;letter-spacing:-.01em;margin:2.1rem 0 .75rem;
+    display:flex;align-items:center;gap:.6rem;font-weight:650;
+  }
+  h2::before{content:"";width:3px;height:1.05rem;border-radius:2px;background:linear-gradient(180deg,#FFB13D,#F07A00)}
+  p{color:var(--muted);font-size:.95rem;margin-bottom:.85rem}
+  ul{margin:.25rem 0 .9rem 1.1rem;color:var(--muted);font-size:.95rem}
+  li{margin-bottom:.4rem}
+  .mail{
+    display:inline-flex;align-items:center;gap:.5rem;margin-top:.35rem;
+    font-family:var(--mono);font-size:.88rem;color:#FFB13D;
+    background:rgba(255,149,0,.1);border:1px solid rgba(255,149,0,.22);
+    padding:.5rem .9rem;border-radius:10px;
+  }
+  .mail:hover{text-decoration:none;background:rgba(255,149,0,.16)}
+  footer{
+    border-top:1px solid var(--stroke);margin-top:2.5rem;padding-top:1.25rem;
+    display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+    font-size:.8rem;color:var(--muted-2);
+  }
+  footer a{color:var(--muted);font-size:.8rem}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="back" href="../index.html">
+      <img src="../assets/logo.png" alt="">
+      <span data-en="← Back to LatheExpert Pro" data-zh="← 返回车工专家专业版">← Back to LatheExpert Pro</span>
+    </a>
+    <button class="lang-btn" id="lang-toggle" onclick="toggleLanguage()">中文</button>
+  </div>
+</div>
+
+<main>
+  <div class="kicker" data-en="Legal" data-zh="法律文件">Legal</div>
+  <h1 data-en="Terms of Service" data-zh="服务条款">Terms of Service</h1>
+  <div class="updated" data-en="Last updated: October 17, 2026" data-zh="最后更新：2026 年 10 月 17 日">Last updated: October 17, 2026</div>
+
+  <div class="card">
+    <p data-en="Please read these Terms of Service (“Terms”) carefully before using the <b>LatheExpert Pro</b> application (the “Service”). By downloading, accessing or using the Service you agree to be bound by these Terms. If you do not agree with any part of them, please do not use the Service." data-zh="在使用 <b>车工专家专业版</b>（LatheExpert Pro）应用程序（以下简称“本服务”）之前，请仔细阅读本服务条款（以下简称“条款”）。下载、访问或使用本服务，即表示您同意受本条款约束。如果您不同意条款的任何部分，请勿使用本服务。">Please read these Terms of Service (“Terms”) carefully before using the <b>LatheExpert Pro</b> application (the “Service”). By downloading, accessing or using the Service you agree to be bound by these Terms.</p>
+  </div>
+
+  <h2 data-en="1. The Service" data-zh="1. 服务说明">1. The Service</h2>
+  <p data-en="LatheExpert Pro is a calculation and reference tool for lathe operators and CNC programmers, organised into four tabs — Calculate, Functions, Manual and Mine. It provides geometric calculations, cutting-parameter suggestions, GB/T tolerance and acceptance-limit lookups, and generated FANUC A NC program fragments. The Service is supplied as a mobile app and a web build." data-zh="车工专家专业版是一款面向车床操作者与数控编程人员的计算与查询工具，分为「计算 / 功能 / 手册 / 我的」四个标签页，提供几何计算、切削参数建议、GB/T 公差与验收极限查询，以及生成的 FANUC A 数控程序片段。本服务以移动应用与网页版形式提供。">LatheExpert Pro is a calculation and reference tool for lathe operators and CNC programmers. It provides geometric calculations, cutting-parameter suggestions, tolerance lookups and generated NC program fragments. The Service is supplied as a mobile app and a web build.</p>
+
+  <h2 data-en="2. Use License" data-zh="2. 使用许可">2. Use License</h2>
+  <p data-en="You are granted a personal, non-exclusive, non-transferable licence to use the Service for your own machining work. Under this licence you may not:" data-zh="我们授予您一项个人、非独占、不可转让的许可，用于您自身的加工工作。在此许可下，您不得：">You are granted a personal, non-exclusive, non-transferable licence to use the Service for your own machining work. Under this licence you may not:</p>
+  <ul>
+    <li data-en="decompile, reverse engineer or attempt to extract the source code of the app;" data-zh="反编译、逆向工程或试图提取应用源代码；">decompile, reverse engineer or attempt to extract the source code of the app;</li>
+    <li data-en="resell, sublicense, rent or redistribute the app or its content;" data-zh="转售、再许可、出租或再分发本应用及其内容；">resell, sublicense, rent or redistribute the app or its content;</li>
+    <li data-en="remove any copyright, trademark or other proprietary notices." data-zh="移除任何版权、商标或其他专有声明。">remove any copyright, trademark or other proprietary notices.</li>
+  </ul>
+  <p data-en="This licence terminates automatically if you breach any of these restrictions." data-zh="如果您违反上述任何限制，本许可将自动终止。">This licence terminates automatically if you breach any of these restrictions.</p>
+
+  <h2 data-en="3. Engineering Results — Important" data-zh="3. 工程计算结果 — 重要提示">3. Engineering Results — Important</h2>
+  <div class="card warn">
+    <p data-en="<b>All calculations, generated programs and process suggestions are reference values only.</b> Machining involves tooling, material batches, machine rigidity, controller dialects and safety factors that no app can fully capture. You are responsible for verifying every value against the drawing, the process sheet, the tooling and the machine before cutting metal." data-zh="<b>所有计算结果、生成的程序与工艺建议仅供参考。</b>实际加工涉及刀具、材料批次、机床刚性、系统方言与安全系数等因素，任何应用都无法完全覆盖。在开动机床前，您有责任将每一个数值与图纸、工艺文件、刀具和机床实际情况进行核对。">All calculations, generated programs and process suggestions are reference values only. Machining involves tooling, material batches, machine rigidity, controller dialects and safety factors that no app can fully capture. You are responsible for verifying every value against the drawing, the process sheet, the tooling and the machine before cutting metal.</p>
+    <p data-en="Generated blocks are G18 contour skeletons: they do not include tool-nose compensation, the work coordinate system or the stock allowance, and they assume the diameter-programming convention unless you switch the unit preference to radius." data-zh="生成的程序段只是 G18 轮廓骨架：不含刀尖补偿、工件坐标系与预加工余量；除非把单位偏好切到半径编程，否则默认按直径编程输出。">Generated blocks are G18 contour skeletons: they do not include tool-nose compensation, work coordinates or stock allowance, and assume diameter programming unless you switch the preference.</p>
+    <p data-en="Thread and tolerance data follow the standard editions noted in the app (e.g. GB/T 1800, GB/T 3177, ISO 60° metric threads). Where a standard, a drawing or a customer specification differs from a result shown in the app, the standard, drawing or specification prevails." data-zh="螺纹与公差数据依据应用内标注的标准版本（如 GB/T 1800、GB/T 3177、ISO 60° 公制螺纹）。当标准、图纸或客户规范与应用显示的结果不一致时，以标准、图纸或规范为准。">Thread and tolerance data follow the standard editions noted in the app (e.g. GB/T 1800, GB/T 3177, ISO 60° metric threads). Where a standard, a drawing or a customer specification differs from a result shown in the app, the standard, drawing or specification prevails.</p>
+  </div>
+
+  <h2 data-en="4. Disclaimer" data-zh="4. 免责声明">4. Disclaimer</h2>
+  <p data-en="The Service is provided “as is” and “as available”, without warranties of any kind, express or implied, including but not limited to merchantability, fitness for a particular purpose or non-infringement. We do not warrant that the Service will be uninterrupted, error-free or that any defect will be corrected." data-zh="本服务按“现状”与“现有可用”状态提供，不作任何明示或暗示的保证，包括但不限于适销性、特定用途适用性或不侵权。我们不保证服务不中断、无错误，也不保证任何缺陷会被修正。">The Service is provided “as is” and “as available”, without warranties of any kind, express or implied, including but not limited to merchantability, fitness for a particular purpose or non-infringement. We do not warrant that the Service will be uninterrupted, error-free or that any defect will be corrected.</p>
+
+  <h2 data-en="5. Limitation of Liability" data-zh="5. 责任限制">5. Limitation of Liability</h2>
+  <p data-en="To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special or consequential damages, including loss of profit, loss of production, scrapped workpieces, damaged tooling or machine downtime, arising from the use of or inability to use the Service, even if we have been advised of the possibility of such damages." data-zh="在法律允许的最大范围内，对于因使用或无法使用本服务而产生的任何间接、附带、特殊或后果性损害（包括利润损失、停产、工件报废、刀具损坏或机床停机），我们不承担责任，即使我们已被告知此类损害的可能性。">To the maximum extent permitted by law, we shall not be liable for any indirect, incidental, special or consequential damages, including loss of profit, loss of production, scrapped workpieces, damaged tooling or machine downtime, arising from the use of or inability to use the Service, even if we have been advised of the possibility of such damages.</p>
+
+  <h2 data-en="6. Your Data" data-zh="6. 您的数据">6. Your Data</h2>
+  <p data-en="The Service stores your inputs and history locally on your device. We have no access to it and cannot recover it for you. Please keep your own backups of values you need to retain. See our <a href="privacy_policy.html">Privacy Policy</a> for details." data-zh="本服务将您的输入与历史记录保存在设备本地。我们无法访问、也无法为您找回这些数据，请自行备份需要长期保留的数值。详见<a href="privacy_policy.html">隐私政策</a>。">The Service stores your inputs and history locally on your device. We have no access to it and cannot recover it for you. Please keep your own backups of values you need to retain. See our <a href="privacy_policy.html">Privacy Policy</a> for details.</p>
+
+  <h2 data-en="7. Changes to These Terms" data-zh="7. 条款修改">7. Changes to These Terms</h2>
+  <p data-en="We may revise these Terms at any time. The current version is always published on this page with its “last updated” date. By continuing to use the Service after a revision you accept the revised Terms." data-zh="我们可能随时修订本条款。最新版本始终发布在本页面并标注“最后更新”日期。修订后继续使用本服务，即表示您接受修订后的条款。">We may revise these Terms at any time. The current version is always published on this page with its “last updated” date. By continuing to use the Service after a revision you accept the revised Terms.</p>
+
+  <h2 data-en="8. Governing Law" data-zh="8. 适用法律">8. Governing Law</h2>
+  <p data-en="These Terms are governed by and construed in accordance with the laws of the jurisdiction in which the developer operates, without regard to its conflict-of-law rules." data-zh="本条款受开发者运营所在地法律管辖并据其解释，不适用冲突法规则。">These Terms are governed by and construed in accordance with the laws of the jurisdiction in which the developer operates, without regard to its conflict-of-law rules.</p>
+
+  <h2 data-en="9. Contact Us" data-zh="9. 联系我们">9. Contact Us</h2>
+  <p data-en="If you have any question about these Terms, please write to us:" data-zh="如果您对本条款有任何疑问，欢迎通过以下方式联系我们：">If you have any question about these Terms, please write to us:</p>
+  <a class="mail" href="mailto:cutflowpro25@gmail.com">cutflowpro25@gmail.com</a>
+
+  <footer>
+    <span data-en="© 2026 LatheExpert. All rights reserved." data-zh="© 2026 LatheExpert. 保留所有权利。">© 2026 LatheExpert. All rights reserved.</span>
+    <a href="privacy_policy.html" data-en="← Privacy Policy" data-zh="← 隐私政策">← Privacy Policy</a>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var KEY = 'lathexpert-lang';
+  var fromUrl = new URLSearchParams(location.search).get('lang');
+  var lang = fromUrl === 'en' || fromUrl === 'zh' ? fromUrl : localStorage.getItem(KEY);
+  if (!lang) {
+    lang = (navigator.language || 'en').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+  }
+  localStorage.setItem(KEY, lang);
+
+  function apply(l) {
+    document.documentElement.lang = l === 'zh' ? 'zh-CN' : 'en';
+    document.querySelectorAll('[data-en]').forEach(function (el) {
+      if (el.tagName === 'TITLE') return;
+      var v = el.getAttribute('data-' + l);
+      if (v !== null) el.innerHTML = v;
+    });
+    var title = document.querySelector('title');
+    if (title) {
+      var t = title.getAttribute('data-' + l);
+      if (t) title.textContent = t;
+    }
+    var btn = document.getElementById('lang-toggle');
+    if (btn) btn.textContent = l === 'zh' ? 'EN' : '中文';
+  }
+
+  window.toggleLanguage = function () {
+    lang = lang === 'zh' ? 'en' : 'zh';
+    localStorage.setItem(KEY, lang);
+    apply(lang);
+  };
+
+  apply(lang);
+})();
+</script>
+</body>
+</html>
