@@ -180,8 +180,16 @@
       var t = title.getAttribute('data-' + l);
       if (t) title.textContent = t;
     }
+    var NAMES = { zh: '简体', 'zh-hant': '繁體', en: 'EN' };
+    var TIPS = {
+      zh: '当前语言：简体中文 · 点击切换为繁體',
+      'zh-hant': '當前語言：繁體中文 · 點擊切換為 English',
+      en: 'Language: English · click to switch to 简体中文'
+    };
     var label = document.getElementById('lang-label') || document.getElementById('lang-toggle');
-    if (label) label.textContent = l === 'zh' ? '简体' : l === 'zh-hant' ? '繁體' : 'EN';
+    if (label) label.textContent = NAMES[l];
+    var lb = document.getElementById('lang-toggle');
+    if (lb) { lb.title = TIPS[l]; lb.setAttribute('aria-label', TIPS[l]); }
   }
 
   window.toggleLanguage = function () {

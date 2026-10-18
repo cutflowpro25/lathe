@@ -95,6 +95,7 @@ a{color:inherit;text-decoration:none}
 }
 .lang-btn:hover{color:var(--text);border-color:var(--stroke-strong);background:rgba(255,255,255,.04)}
 .lang-btn svg{width:13px;height:13px;opacity:.8}
+.lang-btn .caret{width:9px;height:9px;opacity:.55;margin-left:.05rem}
 
 /* ---------- buttons ---------- */
 .btn{
@@ -433,6 +434,7 @@ footer{border-top:1px solid var(--stroke);background:rgba(255,255,255,.015);padd
       <button class="lang-btn" id="lang-toggle" onclick="toggleLanguage()" aria-label="Switch language" title="Switch language / 切换语言 / 切換語言">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></svg>
         <span id="lang-label">EN</span>
+        <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
       </button>
       <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6824189295" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.9c0-2 1.6-3 1.7-3.1-1-1.4-2.4-1.6-2.9-1.6-1.2-.1-2.4.7-3 .7-.6 0-1.5-.7-2.5-.7-1.3 0-2.5.8-3.2 2-1.4 2.4-.4 6 1 8 .7 1 1.5 2.1 2.6 2 1-.1 1.4-.7 2.7-.7 1.2 0 1.6.7 2.7.7 1.1 0 1.8-1 2.5-2 .8-1.2 1.1-2.3 1.1-2.4-.1 0-2.3-.9-2.7-3zM14.5 6.9c.5-.7.9-1.6.8-2.5-.8 0-1.8.5-2.4 1.2-.5.6-.9 1.5-.8 2.4.9.1 1.8-.4 2.4-1.1z"/></svg>
@@ -865,8 +867,16 @@ footer{border-top:1px solid var(--stroke);background:rgba(255,255,255,.015);padd
       img.src = 'assets/' + l + '/' + img.getAttribute('data-shot') + '.jpg';
     });
 
+    var NAMES = { zh: '简体', 'zh-hant': '繁體', en: 'EN' };
+    var TIPS = {
+      zh: '当前语言：简体中文 · 点击切换为繁體',
+      'zh-hant': '當前語言：繁體中文 · 點擊切換為 English',
+      en: 'Language: English · click to switch to 简体中文'
+    };
     var label = document.getElementById('lang-label') || document.getElementById('lang-toggle');
-    if (label) label.textContent = l === 'zh' ? '简体' : l === 'zh-hant' ? '繁體' : 'EN';
+    if (label) label.textContent = NAMES[l];
+    var lb = document.getElementById('lang-toggle');
+    if (lb) { lb.title = TIPS[l]; lb.setAttribute('aria-label', TIPS[l]); }
   }
 
   window.toggleLanguage = function () {
