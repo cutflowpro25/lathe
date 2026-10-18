@@ -3,7 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#07080B">
+<meta name="theme-color" content="#080C11">
+<script>
+  /* App 内嵌（?embed=1）时立刻隐藏站点顶栏，避免首帧闪烁 */
+  if (new URLSearchParams(location.search).get('embed') === '1') {
+    document.documentElement.classList.add('embed');
+  }
+</script>
 <title data-en="Terms of Service — LatheExpert Pro" data-zh="服务条款 — 车工专家专业版" data-zh-hant="服務條款 — 車工專家專業版">Terms of Service — LatheExpert Pro</title>
 <link rel="icon" href="../assets/logo.png">
 <style>
@@ -37,6 +43,13 @@
   .back{display:inline-flex;align-items:center;gap:.5rem;color:var(--muted);font-size:.88rem;font-weight:500}
   .back:hover{color:var(--text);text-decoration:none}
   .back img{width:26px;height:26px;border-radius:7px}
+  /* 内嵌到 App 的 WebView 时隐藏站点顶栏（App 自带返回与标题） */
+  html.embed .topbar{display:none}
+  html.embed main{padding:1.6rem 1.15rem 3rem}
+  @media (max-width:430px){
+    html.embed main{padding:1.15rem 1.05rem 2.5rem}
+    html.embed h1{font-size:1.7rem}
+  }
   .lang-btn{
     font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;
     color:var(--muted);background:transparent;border:1px solid var(--stroke);
