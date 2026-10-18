@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>App Store 頭圖 — 車工專家專業版</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:2622px;height:1475px;overflow:hidden}
+  body{
+    font-family:-apple-system,"SF Pro Display","Helvetica Neue",Arial,"PingFang SC",sans-serif;
+    background:#080C11;color:#EAF1F8;position:relative;
+    -webkit-font-smoothing:antialiased;
+  }
+  /* 蓝图网格，与 site/index.html 同源 */
+  .grid{
+    position:absolute;inset:0;
+    background-image:
+      linear-gradient(rgba(90,200,255,.055) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(90,200,255,.055) 1px,transparent 1px);
+    background-size:64px 64px;
+    -webkit-mask-image:radial-gradient(120% 95% at 46% 42%,#000 26%,transparent 96%);
+  }
+  .glow-a{position:absolute;width:1700px;height:1250px;right:-380px;top:-460px;
+    background:radial-gradient(circle,rgba(255,149,0,.22),rgba(255,149,0,0) 62%)}
+  .glow-b{position:absolute;width:1250px;height:950px;left:-340px;bottom:-420px;
+    background:radial-gradient(circle,rgba(90,200,255,.15),transparent 66%)}
+  .fade{position:absolute;left:0;right:0;bottom:0;height:300px;z-index:4;
+    background:linear-gradient(rgba(8,12,17,0),#080C11 76%)}
+
+  .content{position:absolute;left:150px;top:0;height:100%;width:1460px;
+    display:flex;flex-direction:column;justify-content:center;padding-bottom:40px}
+
+  .brand{display:flex;align-items:center;gap:26px;margin-bottom:64px}
+  .brand img{width:88px;height:88px;border-radius:22px;
+    box-shadow:0 18px 44px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.07)}
+  .brand .wm{font-size:27px;letter-spacing:.22em;font-weight:600;color:#8C9BAD}
+  .brand .wm b{color:#EAF1F8;font-weight:700}
+  .brand .cn{font-size:26px;color:#5A6B7D;margin-top:8px;letter-spacing:.06em}
+
+  h1{font-size:146px;line-height:1.14;letter-spacing:-.01em;font-weight:700;white-space:nowrap}
+  h1 span{display:block}
+h1 em{font-style:normal;
+    background:linear-gradient(96deg,#FFD79A 0%,#FFB13D 38%,#F07A00 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{margin-top:46px;font-size:35px;line-height:1.55;color:#8C9BAD;max-width:1230px}
+  .sub b{color:#EAF1F8;font-weight:600;white-space:nowrap}
+
+  .chips{display:flex;gap:18px;margin-top:52px;align-items:center;flex-wrap:wrap}
+  .chip{
+    font-size:28px;letter-spacing:.01em;color:#C7D3E0;
+    padding:15px 30px;border-radius:999px;
+    background:rgba(140,180,220,.07);border:1px solid rgba(140,180,220,.18);
+  }
+  .chip.hot{color:#FFCF8A;background:rgba(255,149,0,.12);border-color:rgba(255,149,0,.32)}
+
+  .themes{display:flex;align-items:center;gap:14px;margin-top:34px;padding-left:6px}
+  .themes i{width:28px;height:28px;border-radius:9px;display:block;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.16),0 4px 12px rgba(0,0,0,.5)}
+  .themes span{font-size:24px;color:#5A6B7D;margin-left:10px;letter-spacing:.04em}
+
+  /* 右侧：手机 + 代码卡 */
+  .meta{position:absolute;z-index:6;left:150px;bottom:78px;font-size:23px;letter-spacing:.04em;
+    color:#4F5D69}
+
+  .stage{position:absolute;z-index:2;right:92px;top:0;width:800px;height:1475px}
+  .phone{
+    position:absolute;right:0;top:130px;width:664px;padding:16px;
+    border-radius:58px;background:linear-gradient(160deg,#202A36,#0B1017);
+    box-shadow:0 60px 130px rgba(0,0,0,.72),0 0 0 1px rgba(140,180,220,.22);
+    transform:rotate(-3.2deg);transform-origin:50% 0;
+  }
+  .phone .screen{border-radius:44px;overflow:hidden;background:#000}
+  .phone img{display:block;width:100%}
+
+  .code{
+    position:absolute;left:-56px;top:826px;width:500px;
+    background:rgba(10,15,22,.95);border:1px solid rgba(140,180,220,.24);
+    border-radius:22px;padding:30px 34px;
+    box-shadow:0 44px 90px rgba(0,0,0,.66);
+    transform:rotate(-1.6deg);
+    font-family:ui-monospace,"SF Mono",Menlo,monospace;
+  }
+  .code .hd{font-size:20px;color:#5A6B7D;letter-spacing:.05em;
+    padding-bottom:16px;margin-bottom:18px;border-bottom:1px solid rgba(140,180,220,.13)}
+  .code pre{font-size:25px;line-height:1.78;white-space:pre;color:#C9D8E6}
+  .code .c{color:#5A6B7D}
+  .code .x{color:#7EE0A3}
+  .code .z{color:#5AC8FF}
+  .code .n{color:#E8C37E}
+  .code .g{color:#FFB13D}
+</style>
+</head>
+<body>
+  <div class="glow-a"></div>
+  <div class="glow-b"></div>
+  <div class="grid"></div>
+
+  <div class="content">
+    <div class="brand">
+      <img src="../assets/logo.png" alt="">
+      <div>
+        <div class="wm"><b>車工專家專業版</b></div>
+        <div class="cn">LATHEEXPERT PRO</div>
+      </div>
+    </div>
+
+    <h1><span>輸入即計算</span><span><em>藍圖即時重繪</em></span></h1>
+
+    <p class="sub">10 個專業計算模組、GB/T 公差表，<br>可整段複製的 <b>FANUC A 程式段</b>，全部離線。</p>
+
+    <div class="chips">
+      <span class="chip hot">10 模組 + 公差查詢</span>
+      <span class="chip">直徑 · 半徑切換</span>
+      <span class="chip">100% 離線</span>
+    </div>
+
+    <div class="themes">
+      <i style="background:#FF9500"></i>
+      <i style="background:#7FD4FF"></i>
+      <i style="background:#E67300"></i>
+      <i style="background:#FFB340"></i>
+      <i style="background:#34D399"></i>
+      <i style="background:#C2410C"></i>
+      <span>6 套主題</span>
+    </div>
+  </div>
+
+  <div class="meta">iPhone 與 iPad &nbsp;·&nbsp; 車工專家專業版 LatheExpert Pro</div>
+
+  <div class="fade"></div>
+
+  <div class="stage">
+    <div class="phone">
+      <div class="screen"><img src="../assets/zh-hant/1.jpg" alt=""></div>
+    </div>
+
+    <div class="code">
+      <div class="hd">FANUC A · NC 輪廓 · 直徑編程</div>
+      <pre><span class="c">( 外圓 R5 圓角 · G18 )</span>
+<span class="g">G01</span> <span class="x">X30.000</span> <span class="z">Z0.</span>
+<span class="g">G02</span> <span class="x">X50.000</span> <span class="z">Z-10.000</span> <span class="n">R5.0</span>
+<span class="g">G01</span> <span class="z">W-25.000</span></pre>
+    </div>
+  </div>
+</body>
+</html>
